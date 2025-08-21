@@ -1,0 +1,20 @@
+running egg_info
+writing build/jetracer_description/jetracer_description.egg-info/PKG-INFO
+writing dependency_links to build/jetracer_description/jetracer_description.egg-info/dependency_links.txt
+writing entry points to build/jetracer_description/jetracer_description.egg-info/entry_points.txt
+writing requirements to build/jetracer_description/jetracer_description.egg-info/requires.txt
+writing top-level names to build/jetracer_description/jetracer_description.egg-info/top_level.txt
+reading manifest file 'build/jetracer_description/jetracer_description.egg-info/SOURCES.txt'
+writing manifest file 'build/jetracer_description/jetracer_description.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/display_with_control.launch.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch
+running install_egg_info
+removing '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info' (and everything under it)
+Copying build/jetracer_description/jetracer_description.egg-info to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info
+running install_scripts
+Installing ackermann_controller script to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/jetracer_description
+writing list of installed files to '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log'

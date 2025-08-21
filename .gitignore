@@ -1,0 +1,78 @@
+# ROS 2 build artifacts
+# build/
+# install/
+# log/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+*.egg-info/
+.eggs/
+dist/
+*.egg
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+*.orig
+*.rej
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# ROS specific
+devel/
+devel_isolated/
+*.bag
+*.db3
+*.mcap
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# Colcon
+.colcon_install_layout
+.colcon_build_layout
+
+# OS generated files
+.directory
+.fuse_hidden*
+.nfs*
+
+# Screenshots and media (uncomment if you don't want to track these)
+*.png_
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+
+# Configuration files that might contain sensitive data
+# config/secrets.yaml
+# config/private.yaml

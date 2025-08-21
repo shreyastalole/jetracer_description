@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.001305] (jetracer_description) JobQueued: {'identifier': 'jetracer_description', 'dependencies': OrderedDict()}
+[0.001339] (jetracer_description) JobStarted: {'identifier': 'jetracer_description'}
+[0.111811] (-) TimerEvent: {}
+[0.215564] (-) TimerEvent: {}
+[0.321080] (-) TimerEvent: {}
+[0.421816] (-) TimerEvent: {}
+[0.526542] (-) TimerEvent: {}
+[0.635027] (-) TimerEvent: {}
+[0.735631] (-) TimerEvent: {}
+[0.842387] (-) TimerEvent: {}
+[0.943248] (-) TimerEvent: {}
+[1.044828] (-) TimerEvent: {}
+[1.151760] (-) TimerEvent: {}
+[1.254645] (-) TimerEvent: {}
+[1.355661] (-) TimerEvent: {}
+[1.459384] (-) TimerEvent: {}
+[1.564868] (-) TimerEvent: {}
+[1.671537] (-) TimerEvent: {}
+[1.775309] (-) TimerEvent: {}
+[1.875962] (-) TimerEvent: {}
+[1.977845] (-) TimerEvent: {}
+[2.079869] (-) TimerEvent: {}
+[2.180575] (-) TimerEvent: {}
+[2.282262] (-) TimerEvent: {}
+[2.386535] (-) TimerEvent: {}
+[2.505579] (-) TimerEvent: {}
+[2.607603] (-) TimerEvent: {}
+[2.708166] (-) TimerEvent: {}
+[2.809371] (-) TimerEvent: {}
+[2.911701] (-) TimerEvent: {}
+[3.013683] (-) TimerEvent: {}
+[3.114602] (-) TimerEvent: {}
+[3.115273] (jetracer_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/jetracer_description', 'build', '--build-base', '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build', 'install', '--record', '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/jetracer/ros2_ws/src/jetracer_description', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'en_IN', 'USER': 'jetracer', 'LC_TIME': 'de_DE.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jetracer', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.102.3', 'DESKTOP_SESSION': 'cinnamon', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'CINNAMON_VERSION': '6.2.9', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/jetracer/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2188', 'COLCON_PREFIX_PATH': '/home/jetracer/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jetracer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': 'c2', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetracer/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts:/home/jetracer/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/jetracer-VirtualBox:@/tmp/.ICE-unix/1393,unix/jetracer-VirtualBox:/tmp/.ICE-unix/1393', 'GDM_LANG': 'en_US', 'PAPERSIZE': 'a4', 'GTK3_MODULES': 'xapp-gtk3-module', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/jetracer/.vscode/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-c483e97e9e2b2d3d.txt', 'LANG': 'en_IN.UTF-8', 'XDG_CURRENT_DESKTOP': 'X-Cinnamon', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XDG_SESSION_DESKTOP': 'cinnamon', 'XAUTHORITY': '/home/jetracer/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-9d396f2da1.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/jetracer', 'AMENT_PREFIX_PATH': '/home/jetracer/ros2_ws/install/my_robot_controller:/home/jetracer/ros2_ws/install/jetracer_description:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'X-Cinnamon', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'cinnamon', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'XDG_VTNR': '7', 'PWD': '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-cinnamon:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/cinnamon:/usr/share/gnome:/home/jetracer/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share', 'PYTHONPATH': '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages:/home/jetracer/ros2_ws/build/my_robot_controller:/home/jetracer/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages:/home/jetracer/ros2_ws/install/jetracer_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.215444] (-) TimerEvent: {}
+[3.317948] (-) TimerEvent: {}
+[3.420951] (-) TimerEvent: {}
+[3.528375] (-) TimerEvent: {}
+[3.629490] (-) TimerEvent: {}
+[3.731325] (-) TimerEvent: {}
+[3.835215] (-) TimerEvent: {}
+[3.937806] (-) TimerEvent: {}
+[4.042172] (-) TimerEvent: {}
+[4.052409] (jetracer_description) StdoutLine: {'line': b'running egg_info\n'}
+[4.102568] (jetracer_description) StdoutLine: {'line': b'writing build/jetracer_description/jetracer_description.egg-info/PKG-INFO\n'}
+[4.134661] (jetracer_description) StdoutLine: {'line': b'writing dependency_links to build/jetracer_description/jetracer_description.egg-info/dependency_links.txt\n'}
+[4.134837] (jetracer_description) StdoutLine: {'line': b'writing entry points to build/jetracer_description/jetracer_description.egg-info/entry_points.txt\n'}
+[4.134882] (jetracer_description) StdoutLine: {'line': b'writing requirements to build/jetracer_description/jetracer_description.egg-info/requires.txt\n'}
+[4.134917] (jetracer_description) StdoutLine: {'line': b'writing top-level names to build/jetracer_description/jetracer_description.egg-info/top_level.txt\n'}
+[4.143892] (-) TimerEvent: {}
+[4.156261] (jetracer_description) StdoutLine: {'line': b"reading manifest file 'build/jetracer_description/jetracer_description.egg-info/SOURCES.txt'\n"}
+[4.159968] (jetracer_description) StdoutLine: {'line': b"writing manifest file 'build/jetracer_description/jetracer_description.egg-info/SOURCES.txt'\n"}
+[4.160196] (jetracer_description) StdoutLine: {'line': b'running build\n'}
+[4.161283] (jetracer_description) StdoutLine: {'line': b'running build_py\n'}
+[4.175829] (jetracer_description) StdoutLine: {'line': b'copying jetracer_description/ackermann_controller.py -> /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build/lib/jetracer_description\n'}
+[4.176040] (jetracer_description) StdoutLine: {'line': b'running install\n'}
+[4.189593] (jetracer_description) StdoutLine: {'line': b'running install_lib\n'}
+[4.245022] (-) TimerEvent: {}
+[4.257437] (jetracer_description) StdoutLine: {'line': b'copying /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build/lib/jetracer_description/ackermann_controller.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description\n'}
+[4.263940] (jetracer_description) StdoutLine: {'line': b'byte-compiling /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/ackermann_controller.py to ackermann_controller.cpython-312.pyc\n'}
+[4.266270] (jetracer_description) StdoutLine: {'line': b'running install_data\n'}
+[4.272634] (jetracer_description) StdoutLine: {'line': b'copying launch/display_working.launch.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch\n'}
+[4.275960] (jetracer_description) StdoutLine: {'line': b'copying launch/teleop_keyboard.launch.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch\n'}
+[4.276567] (jetracer_description) StdoutLine: {'line': b'copying launch/gz_sim.launch.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch\n'}
+[4.278000] (jetracer_description) StdoutLine: {'line': b'copying launch/teleop_simple.launch.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch\n'}
+[4.282784] (jetracer_description) StdoutLine: {'line': b'copying urdf/jetracer.xacro -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/urdf\n'}
+[4.285292] (jetracer_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.328882] (jetracer_description) StdoutLine: {'line': b"removing '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[4.329031] (jetracer_description) StdoutLine: {'line': b'Copying build/jetracer_description/jetracer_description.egg-info to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info\n'}
+[4.331940] (jetracer_description) StdoutLine: {'line': b'running install_scripts\n'}
+[4.353508] (-) TimerEvent: {}
+[4.455595] (-) TimerEvent: {}
+[4.560003] (jetracer_description) StdoutLine: {'line': b'Installing ackermann_controller script to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/jetracer_description\n'}
+[4.560384] (-) TimerEvent: {}
+[4.562097] (jetracer_description) StdoutLine: {'line': b"writing list of installed files to '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log'\n"}
+[4.660682] (-) TimerEvent: {}
+[4.671212] (jetracer_description) CommandEnded: {'returncode': 0}
+[4.765529] (-) TimerEvent: {}
+[4.826163] (jetracer_description) JobEnded: {'identifier': 'jetracer_description', 'rc': 0}
+[4.833497] (-) EventReactorShutdown: {}
