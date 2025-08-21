@@ -1,6 +1,8 @@
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/ackermann_controller.py
+/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/simple_wasd_controller.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/__init__.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/__pycache__/ackermann_controller.cpython-312.pyc
+/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/__pycache__/simple_wasd_controller.cpython-312.pyc
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/__pycache__/__init__.cpython-312.pyc
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/ament_index/resource_index/packages/jetracer_description
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/package.xml
@@ -11,6 +13,7 @@
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/display_with_control.launch.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/jetracer_simulation.launch.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/teleop_keyboard.launch.py
+/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/display_wasd.launch.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/jetracer_complete.launch.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/gz_sim.launch.py
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/launch/teleop_simple.launch.py
@@ -31,3 +34,4 @@
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info/SOURCES.txt
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info/top_level.txt
 /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/jetracer_description/ackermann_controller
+/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/jetracer_description/simple_wasd_controller

@@ -1,0 +1,90 @@
+[0.726s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'jetracer_description']
+[0.726s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['jetracer_description'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x779099d939b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x779099d39400>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x779099d39400>>, mixin_verb=('build',))
+[1.051s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.052s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.052s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.052s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.052s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.052s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.052s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetracer/ros2_ws/src/jetracer_description'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.054s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.161s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'jetracer_description'
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.263s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/jetracer/ros2_ws/install
+[1.264s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 335 installed packages in /opt/ros/jazzy
+[1.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.331s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'cmake_target' from command line to 'None'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.334s] Level 5:colcon.colcon_core.verb:set package 'jetracer_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.334s] DEBUG:colcon.colcon_core.verb:Building package 'jetracer_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description', 'merge_install': False, 'path': '/home/jetracer/ros2_ws/src/jetracer_description', 'symlink_install': False, 'test_result_base': None}
+[1.335s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.340s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.341s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jetracer/ros2_ws/src/jetracer_description' with build type 'ament_python'
+[1.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetracer_description', 'ament_prefix_path')
+[1.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/hook/ament_prefix_path.ps1'
+[1.405s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/hook/ament_prefix_path.dsv'
+[1.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/hook/ament_prefix_path.sh'
+[1.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.444s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.194s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jetracer/ros2_ws/src/jetracer_description'
+[2.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.204s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetracer/ros2_ws/src/jetracer_description': PYTHONPATH=/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/jetracer_description build --build-base /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build install --record /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log --single-version-externally-managed install_data
+[7.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetracer/ros2_ws/src/jetracer_description' returned '0': PYTHONPATH=/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/jetracer_description build --build-base /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build install --record /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log --single-version-externally-managed install_data
+[7.543s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description' for CMake module files
+[7.544s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description' for CMake config files
+[7.556s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib'
+[7.557s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/bin'
+[7.557s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/pkgconfig/jetracer_description.pc'
+[7.559s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages'
+[7.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('jetracer_description', 'pythonpath')
+[7.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/hook/pythonpath.ps1'
+[7.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/hook/pythonpath.dsv'
+[7.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/hook/pythonpath.sh'
+[7.567s] Level 1:colcon.colcon_core.environment:checking '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/bin'
+[7.567s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(jetracer_description)
+[7.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/package.ps1'
+[7.569s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/package.dsv'
+[7.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/package.sh'
+[7.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/package.bash'
+[7.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/jetracer_description/package.zsh'
+[7.580s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/share/colcon-core/packages/jetracer_description)
+[7.581s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.581s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.581s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.581s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.646s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.646s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.646s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.704s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.704s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetracer/ros2_ws/src/jetracer_description/install/local_setup.ps1'
+[7.733s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetracer/ros2_ws/src/jetracer_description/install/_local_setup_util_ps1.py'
+[7.760s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetracer/ros2_ws/src/jetracer_description/install/setup.ps1'
+[7.794s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetracer/ros2_ws/src/jetracer_description/install/local_setup.sh'
+[7.810s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetracer/ros2_ws/src/jetracer_description/install/_local_setup_util_sh.py'
+[7.837s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetracer/ros2_ws/src/jetracer_description/install/setup.sh'
+[7.850s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetracer/ros2_ws/src/jetracer_description/install/local_setup.bash'
+[7.861s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetracer/ros2_ws/src/jetracer_description/install/setup.bash'
+[7.869s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetracer/ros2_ws/src/jetracer_description/install/local_setup.zsh'
+[7.881s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetracer/ros2_ws/src/jetracer_description/install/setup.zsh'

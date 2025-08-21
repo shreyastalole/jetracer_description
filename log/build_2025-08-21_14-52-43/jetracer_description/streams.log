@@ -1,0 +1,25 @@
+[1.115s] Invoking command in '/home/jetracer/ros2_ws/src/jetracer_description': PYTHONPATH=/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/jetracer_description build --build-base /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build install --record /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log --single-version-externally-managed install_data
+[1.564s] running egg_info
+[1.598s] writing build/jetracer_description/jetracer_description.egg-info/PKG-INFO
+[1.598s] writing dependency_links to build/jetracer_description/jetracer_description.egg-info/dependency_links.txt
+[1.601s] writing entry points to build/jetracer_description/jetracer_description.egg-info/entry_points.txt
+[1.603s] writing requirements to build/jetracer_description/jetracer_description.egg-info/requires.txt
+[1.603s] writing top-level names to build/jetracer_description/jetracer_description.egg-info/top_level.txt
+[1.639s] reading manifest file 'build/jetracer_description/jetracer_description.egg-info/SOURCES.txt'
+[1.651s] writing manifest file 'build/jetracer_description/jetracer_description.egg-info/SOURCES.txt'
+[1.651s] running build
+[1.651s] running build_py
+[1.651s] copying jetracer_description/simple_wasd_controller.py -> /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build/lib/jetracer_description
+[1.652s] running install
+[1.669s] running install_lib
+[1.690s] copying /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build/lib/jetracer_description/simple_wasd_controller.py -> /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description
+[1.700s] byte-compiling /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description/simple_wasd_controller.py to simple_wasd_controller.cpython-312.pyc
+[1.700s] running install_data
+[1.700s] running install_egg_info
+[1.713s] removing '/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info' (and everything under it)
+[1.718s] Copying build/jetracer_description/jetracer_description.egg-info to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages/jetracer_description-0.0.0-py3.12.egg-info
+[1.718s] running install_scripts
+[1.851s] Installing ackermann_controller script to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/jetracer_description
+[1.851s] Installing simple_wasd_controller script to /home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/jetracer_description
+[1.851s] writing list of installed files to '/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log'
+[1.903s] Invoked command in '/home/jetracer/ros2_ws/src/jetracer_description' returned '0': PYTHONPATH=/home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jetracer/ros2_ws/src/jetracer_description/install/jetracer_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/jetracer_description build --build-base /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/build install --record /home/jetracer/ros2_ws/src/jetracer_description/build/jetracer_description/install.log --single-version-externally-managed install_data

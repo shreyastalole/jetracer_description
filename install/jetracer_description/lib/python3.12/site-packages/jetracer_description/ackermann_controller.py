@@ -2,10 +2,13 @@
 
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
+from geometry_msgs.msg import Twist, TransformStamped
 from sensor_msgs.msg import JointState
+from nav_msgs.msg import Odometry
+from tf2_ros import TransformBroadcaster
 import math
 import threading
+import time
 
 
 class AckermannController(Node):
@@ -28,6 +31,12 @@ class AckermannController(Node):
         self.angular_vel = 0.0
         self.lock = threading.Lock()
         
+        # Robot pose for odometry
+        self.x = 0.0
+        self.y = 0.0
+        self.theta = 0.0
+        self.last_time = time.time()
+        
         # Current joint positions for smooth animation
         self.front_left_steering = 0.0
         self.front_right_steering = 0.0
@@ -44,6 +53,11 @@ class AckermannController(Node):
         
         self.joint_state_pub = self.create_publisher(
             JointState, '/joint_states', 10)
+        
+        self.odom_pub = self.create_publisher(
+            Odometry, '/odom', 10)
+        
+        self.tf_broadcaster = TransformBroadcaster(self)
         
         # Timer for publishing joint states
         self.timer = self.create_timer(
@@ -88,9 +102,18 @@ class AckermannController(Node):
         return left_steering, right_steering
     
     def publish_joint_states(self):
+        current_time = time.time()
+        dt = current_time - self.last_time
+        self.last_time = current_time
+        
         with self.lock:
             linear_vel = self.linear_vel
             angular_vel = self.angular_vel
+        
+        # Update robot pose (odometry)
+        self.x += linear_vel * math.cos(self.theta) * dt
+        self.y += linear_vel * math.sin(self.theta) * dt
+        self.theta += angular_vel * dt
         
         # Calculate steering angles
         left_steering, right_steering = self.calculate_ackermann_steering(linear_vel, angular_vel)
@@ -101,7 +124,6 @@ class AckermannController(Node):
         self.front_right_steering = alpha * right_steering + (1 - alpha) * self.front_right_steering
         
         # Update wheel rotations based on linear velocity
-        dt = 1.0 / self.update_rate
         wheel_radius = 0.05  # 5cm wheel radius
         wheel_angular_vel = linear_vel / wheel_radius
         
@@ -113,6 +135,9 @@ class AckermannController(Node):
                 self.wheel_positions[wheel] -= 2 * math.pi
             elif self.wheel_positions[wheel] < -2 * math.pi:
                 self.wheel_positions[wheel] += 2 * math.pi
+        
+        # Publish odometry
+        self.publish_odometry(current_time, linear_vel, angular_vel)
         
         # Create and publish joint state message
         joint_state = JointState()
@@ -141,6 +166,48 @@ class AckermannController(Node):
         joint_state.effort = [0.0] * len(joint_state.name)
         
         self.joint_state_pub.publish(joint_state)
+    
+    def publish_odometry(self, current_time, linear_vel, angular_vel):
+        # Create odometry message
+        odom = Odometry()
+        odom.header.stamp = self.get_clock().now().to_msg()
+        odom.header.frame_id = 'odom'
+        odom.child_frame_id = 'base_link'
+        
+        # Set position
+        odom.pose.pose.position.x = self.x
+        odom.pose.pose.position.y = self.y
+        odom.pose.pose.position.z = 0.0
+        
+        # Set orientation (quaternion from yaw)
+        odom.pose.pose.orientation.x = 0.0
+        odom.pose.pose.orientation.y = 0.0
+        odom.pose.pose.orientation.z = math.sin(self.theta / 2.0)
+        odom.pose.pose.orientation.w = math.cos(self.theta / 2.0)
+        
+        # Set velocity
+        odom.twist.twist.linear.x = linear_vel
+        odom.twist.twist.linear.y = 0.0
+        odom.twist.twist.angular.z = angular_vel
+        
+        self.odom_pub.publish(odom)
+        
+        # Broadcast TF transform from odom to base_link
+        transform = TransformStamped()
+        transform.header.stamp = self.get_clock().now().to_msg()
+        transform.header.frame_id = 'odom'
+        transform.child_frame_id = 'base_link'
+        
+        transform.transform.translation.x = self.x
+        transform.transform.translation.y = self.y
+        transform.transform.translation.z = 0.0
+        
+        transform.transform.rotation.x = 0.0
+        transform.transform.rotation.y = 0.0
+        transform.transform.rotation.z = math.sin(self.theta / 2.0)
+        transform.transform.rotation.w = math.cos(self.theta / 2.0)
+        
+        self.tf_broadcaster.sendTransform(transform)
 
 
 def main(args=None):
