@@ -10,9 +10,9 @@ import math
 import time
 
 
-class SimpleWASDController(Node):
+class SimpleController(Node):
     """
-    Simplified WASD controller for basic teleoperation.
+    Simplified controller for basic teleoperation.
     Uses simplified differential drive model with visual steering representation.
     """
     
@@ -21,7 +21,7 @@ class SimpleWASDController(Node):
     MAX_STEERING_ANGLE = 0.5  # Maximum visual steering angle in radians
     
     def __init__(self):
-        super().__init__('simple_wasd_controller')
+        super().__init__('simple_controller')
         
         # Parameters
         self.declare_parameter('update_rate', 30.0)
@@ -60,7 +60,8 @@ class SimpleWASDController(Node):
         # Timer for publishing
         self.timer = self.create_timer(1.0 / self.update_rate, self.update_robot)
         
-        self.get_logger().info('Simple WASD Controller Started!')
+        self.get_logger().info('Simple Controller Started!')
+        self.get_logger().info('Waiting for cmd_vel messages on /cmd_vel topic')
         self.get_logger().info('Use teleop_twist_keyboard to control:')
         self.get_logger().info('  ros2 run teleop_twist_keyboard teleop_twist_keyboard')
     
@@ -193,12 +194,12 @@ class SimpleWASDController(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    controller = SimpleWASDController()
+    controller = SimpleController()
     
     try:
         rclpy.spin(controller)
     except KeyboardInterrupt:
-        controller.get_logger().info('Shutting down Simple WASD Controller')
+        controller.get_logger().info('Shutting down Simple Controller')
     finally:
         controller.destroy_node()
         rclpy.shutdown()

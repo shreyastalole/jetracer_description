@@ -28,7 +28,7 @@ setup(
     entry_points={
         'console_scripts': [
             'ackermann_controller = jetracer_description.ackermann_controller:main',
-            'simple_wasd_controller = jetracer_description.simple_wasd_controller:main',
+            'simple_controller = jetracer_description.simple_controller:main',
         ],
     },
 )
