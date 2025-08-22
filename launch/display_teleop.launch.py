@@ -8,6 +8,10 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
+    """
+    Complete launch file for JetRacer with teleop keyboard control.
+    Includes robot visualization in RViz and teleop_twist_keyboard for control.
+    """
     
     # Package directories
     pkg_jetracer_description = FindPackageShare('jetracer_description')
@@ -35,11 +39,11 @@ def generate_launch_description():
         }]
     )
 
-    # Simple WASD Controller Node
-    wasd_controller_node = Node(
+    # Simple Controller Node (subscribes to /cmd_vel)
+    controller_node = Node(
         package='jetracer_description',
-        executable='simple_wasd_controller',
-        name='simple_wasd_controller',
+        executable='simple_controller',
+        name='simple_controller',
         output='screen',
         parameters=[{
             'use_sim_time': use_sim_time,
@@ -47,6 +51,16 @@ def generate_launch_description():
             'angular_speed': 2.0,    # rad/s
             'update_rate': 30.0      # Hz
         }]
+    )
+
+    # Teleop Twist Keyboard (provides actual keyboard control)
+    teleop_node = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        name='teleop_twist_keyboard',
+        output='screen',
+        prefix='xterm -e',
+        parameters=[{'use_sim_time': use_sim_time}]
     )
 
     # RViz with working config
@@ -71,7 +85,8 @@ def generate_launch_description():
 
     # Add the nodes
     ld.add_action(robot_state_publisher_node)
-    ld.add_action(wasd_controller_node)
+    ld.add_action(controller_node)
+    ld.add_action(teleop_node)
     ld.add_action(rviz_node)
 
     return ld

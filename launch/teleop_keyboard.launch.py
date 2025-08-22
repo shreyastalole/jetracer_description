@@ -7,6 +7,10 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
+    """
+    Launch file for teleop keyboard control in the same terminal.
+    Useful for real hardware control without simulation clock.
+    """
     
     # Launch configuration variables
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -17,14 +21,14 @@ def generate_launch_description():
         default_value='false',
         description='Use simulation (Gazebo) clock if true')
 
-    # Teleop Twist Keyboard (run in same terminal)
+    # Teleop Twist Keyboard (run in same terminal with reduced logging)
     teleop_node = Node(
         package='teleop_twist_keyboard',
         executable='teleop_twist_keyboard',
         name='teleop_twist_keyboard',
         output='screen',
         parameters=[{'use_sim_time': use_sim_time}],
-        arguments=['--ros-args', '--log-level', 'WARN']  # Reduce log output
+        arguments=['--ros-args', '--log-level', 'WARN']
     )
 
     # Create the launch description and populate
