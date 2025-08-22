@@ -89,6 +89,7 @@ def generate_launch_description():
         arguments=[
             '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist',
             '/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock',
+            '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
         ],
         output='screen'
     )
